@@ -11,8 +11,6 @@ body {
     background-color: #D6D6D6;
 }
 
-
-
 .flex-parent {
     min-height: 100%;
     display: flex;
@@ -72,13 +70,6 @@ main {
     padding: 0 0 5vh 0;
 }
 
-/*May be superfluous*/
-img {
-    max-width: 100%;
-}
-
-
-
 .selected {
     color: #9F7DCC;
     background-color: #f2e8fe;
@@ -88,6 +79,7 @@ img {
 .female {
     font-family: "Bonbon", cursive;
     color: #ff91af;
+    /*Code from https://animate.style/*/
     animation: fadeInUp;
     animation-duration: 1s;
 }
@@ -95,6 +87,7 @@ img {
 .male {
     font-family: 'Courier New', Courier, monospace;
     color: #3F69E8;
+    /*Code from https://animate.style/*/
     animation: fadeInDown;
     animation-duration: 1s;
 }
@@ -103,10 +96,9 @@ img {
     font-family: 'Bowlby One', cursive;
     color: #cc0202;
     font-size: 20px;
+    /*Code from https://animate.style/*/
     animation: shakeX;
-    /* referring directly to the animation's @keyframe declaration */
     animation-duration: 0.5s;
-    /* don't forget to set a duration! */
 }
 
 main p:hover {
@@ -167,7 +159,6 @@ main p:hover {
     transition: 0.2s;
 }
 
-
 a {
     text-decoration: none;
     color: #9F7DCC;
@@ -178,7 +169,6 @@ a:hover {
     color: #f2e8fe;
     transition: 0.2s;
 }
-
 
 @media screen and (max-width: 600px) {
 
@@ -193,6 +183,4 @@ a:hover {
     .grid-parent {
         grid-template-columns: 1fr;
     }
-
-
 }
